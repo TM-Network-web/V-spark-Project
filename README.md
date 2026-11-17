@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PostPilot AI – Social Media Content Generator & Scheduler
 
-## Getting Started
+PostPilot AI is a lightweight web application that uses Google Gemini AI to generate engaging social media captions and helps users manage and schedule their content.
 
-First, run the development server:
+## Features
+
+- **AI Caption Generator:** Generate 2–3 social media caption options using Google Gemini API.
+- **Platform Selection:** Create content for different social media platforms.
+- **Tone Selection:** Generate captions in different writing tones.
+- **Caption Management:** Select, edit, and manage generated captions.
+- **Post Scheduling:** Choose a date and time for posts.
+- **Dashboard:** View, filter, and manage saved and scheduled posts.
+- **Responsive UI:** Dashboard designed for desktop and mobile screens.
+
+## Technology Stack
+
+- **Frontend:** Next.js, JavaScript
+- **Styling:** Tailwind CSS, Custom CSS
+- **AI Integration:** Google Gemini API
+- **Storage:** Browser LocalStorage (current implementation)
+- **Deployment:** Vercel
+
+## Project Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone YOUR_REPOSITORY_URL
+cd webcompetetion
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env.local` file in the project root:
+
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
+
+Get your Gemini API key from [Google AI Studio](https://aistudio.google.com/apikey).
+
+### 4. Start Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Current Implementation Status
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Gemini AI caption generation: Implemented
+- Caption selection and editing: Implemented
+- Dashboard and post management: Implemented
+- Basic post scheduling interface: Implemented
+- Google Drive integration: Pending
+- Automated email notifications: Pending
+- Authentication: Not implemented
+- Vercel deployment: Deployment target
 
-## Learn More
+## Future Improvements
 
-To learn more about Next.js, take a look at the following resources:
+- Google Drive integration for cloud storage and synchronization.
+- Automated email notifications for scheduled posts.
+- Improved scheduling automation.
+- Further UI and mobile responsiveness improvements.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Project:** PostPilot AI  
+**Purpose:** Lightweight AI-powered social media content generation and scheduling.
